@@ -1,0 +1,9 @@
+function fibonacciRecursivo(n) {
+    if (n <= 1) {
+        return n;
+    }
+    return fibonacciRecursivo(n - 1) + fibonacciRecursivo(n - 2);
+}
+
+let n = 7; 
+console.log("Fibonacci " + n + ": " + fibonacciRecursivo(n));
