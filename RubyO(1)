@@ -1,0 +1,8 @@
+def fibonacci(n)
+    phi = (1 + Math.sqrt(5)) / 2
+    psi = (1 - Math.sqrt(5)) / 2
+    return ((phi**n - psi**n) / Math.sqrt(5)).round
+end
+
+n = 7
+puts "Fibonacci #{n} é: #{fibonacci(n)}"
