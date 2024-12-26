@@ -1,0 +1,13 @@
+#include <stdio.h>
+int fibonacciRecursivo(int n) {
+    if (n <= 1) {
+        return n;
+    }
+    return fibonacciRecursivo(n - 1) + fibonacciRecursivo(n - 2);
+}
+
+int main() {
+    int n = 7;
+    printf("Fibonacci  %d: %d\n", n, fibonacciRecursivo(n));
+    return 0;
+}
