@@ -1,0 +1,14 @@
+using System;
+
+class Fibonacci {
+    static int FibonacciSequence(int n) {
+        double phi = (1 + Math.Sqrt(5)) / 2;
+        double psi = (1 - Math.Sqrt(5)) / 2;
+        return (int)Math.Round((Math.Pow(phi, n) - Math.Pow(psi, n)) / Math.Sqrt(5));
+    }
+
+    static void Main() {
+        int n = 7;
+        Console.WriteLine($"Fibonacci {n} é: {FibonacciSequence(n)}");
+    }
+}
