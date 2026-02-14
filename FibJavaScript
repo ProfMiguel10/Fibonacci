@@ -1,0 +1,19 @@
+function fibonacci(n) {
+    if (n <= 1) {
+        return n;
+    }
+    
+
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+
+const nTermos = 10;
+let resultado = "";
+
+for (let i = 0; i < nTermos; i++) {
+    resultado += fibonacci(i) + (i === nTermos - 1 ? "" : ", ");
+}
+
+console.log("Sequência de Fibonacci:");
+console.log(resultado);
